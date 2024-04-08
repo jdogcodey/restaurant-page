@@ -31,3 +31,5 @@
   createChild(rowTwo, "td", "row");
   createChild(rowTwo, "td", "here");
 })();
+
+export { pageContent };
