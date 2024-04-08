@@ -1,10 +1,10 @@
-(pageContent = () => {
+function pageContent() {
   const container = document.querySelector("#content");
-  createChild = (parent, child, textContent) => {
+  function createChild(parent, child, textContent) {
     return (parent.appendChild(
       document.createElement(`${child}`)
     ).textContent = `${textContent}`);
-  };
+  }
   const hOne = createChild(container, "h1", "This restaurant is amazing");
   const section = container.appendChild(document.createElement("section"));
   const hTwo = createChild(section, "h2", "This is the second section");
@@ -30,6 +30,6 @@
   createChild(rowTwo, "td", "table");
   createChild(rowTwo, "td", "row");
   createChild(rowTwo, "td", "here");
-})();
+}
 
 export { pageContent };
